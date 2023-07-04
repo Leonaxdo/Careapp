@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ElderlyInfoActivity">
+
+    <ImageView
+        android:id="@+id/elderlyImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/animal"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="장동일 어르신"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/elderlyImageView"
+        android:layout_marginStart="8dp" />
+
+    <TextView
+        android:id="@+id/birthTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="생년월일: YYYY년 MM월 DD일"
+        app:layout_constraintTop_toBottomOf="@+id/nameTextView"
+        app:layout_constraintStart_toStartOf="@+id/nameTextView" />
+
+    <TextView
+        android:id="@+id/phoneTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전화번호: 010-1234-5678"
+        app:layout_constraintTop_toBottomOf="@+id/birthTextView"
+        app:layout_constraintStart_toStartOf="@+id/birthTextView" />
+
+    <!-- 좌측중단에는 이전방분기록, 우측중단에는 헬스케어 나머지 화면을 채우도록 -->
+
+
+    <!-- 그 외 필요한 뷰 및 연결 추가 필요 -->
+</androidx.constraintlayout.widget.ConstraintLayout>
